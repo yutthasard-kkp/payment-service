@@ -54,7 +54,7 @@ type APIRouter struct{}
 // SetupRoutes registers routes for the application, including root, info, and health endpoints, using the provided configuration.
 func (r *APIRouter) SetupRoutes(app *fiber.App, config Config) {
 	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Hello Pyment!")
+		return c.SendString("Hello Payment!")
 	})
 
 	app.Get("/info", func(c *fiber.Ctx) error {
